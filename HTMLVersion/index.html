@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/cheerio/lib/cheerio.js"></script>
+    <script src="./downloader.js"></script>
+</head>
+
+<body>
+    <script>
+        let ge2 = new getPicFile({
+            length: 38,
+            url: "https://wenku.baidu.com/view/b5c6aeb93069a45177232f60ddccda38366be17d.html",
+            filename: "改造我们的学习"
+        })
+        ge2.download();
+        // ge2.setterByLocalPic();
+    </script>
+</body>
+
+</html>
